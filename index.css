@@ -1,0 +1,511 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior:smooth;
+   
+   
+}
+.topbanner{
+    height: 35px;
+    width: 100%;
+    background-color: #222222;
+}
+.topbanner p{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    padding-top: 9px;
+}
+/* the whole navigation bar on top */
+.containernav{
+    width: 100%;
+    height: 100px;
+    background-color: #FFFFFF;
+    display:flex;
+    align-items: center;    
+    position: sticky;
+    top: -1px;
+    z-index: 1;
+   
+   
+}
+/* the whole searchbar inclooding icons */
+.search{
+    height: 42px;
+    display: flex;
+    align-items: center;
+    margin-left: 120px;
+    width: 600px;   
+    position: relative;
+    border: 1px solid #E6E6E6;
+ 
+
+
+}
+/* the seatch input only */
+.search-input{
+ border: none;
+    background: transparent;
+ width: 500px;
+    position: absolute;
+    left: 40px;
+    top: 10px;
+    
+}
+/* navihation menu icons inside top nav */
+ .nav-menu{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+position: absolute;
+right: 30px;
+
+ }
+
+ .nav-menu a{
+    text-decoration: none;
+
+ }
+ /* color of text below the icon */
+.icon-text{
+    color: #646464;
+    font-size: 12px;
+   
+}
+.nav-menu .material-symbols-outlined{
+font-size: 20px;
+}
+/* hower effect for navihation icon on navigation bar on top */
+
+/* starting of moving line  */
+.line-effect{
+position: relative;
+
+}
+.line-effect:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    transform: scale(0);
+    transform-origin: bottom left;
+    background-color: black;
+    transition: transform 0.5s ease-out;
+}
+/* end of moving line */
+.line-effect:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+/* second navigation with inline options */
+
+.second-nav{
+    display: flex;
+ justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: -40px;
+    position: relative;
+
+}
+.second-nav a{
+    margin: 15px;
+    color:black;
+    text-decoration: none;
+    padding-right: 3px;
+
+}
+/* line effect of second nav---------------- */
+.line-effect-nav{
+    position: relative;
+    font-size: 15px;
+    
+    }
+    .line-effect-nav:after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0px;
+        bottom: -2px     ;
+        transform: scale(0);
+        transform-origin: bottom left;
+        background-color: black;
+        transition: transform 0.5s ease-out;
+    }
+    /* end of moving line */
+    .line-effect-nav:hover::after{
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+/* location div --------------- */
+.location{
+    background-color: #FDFAF5;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items:center ;
+   
+}
+.location a{
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    margin-left: 50px;
+}
+.location a span,p{
+    font-size: 10px;
+    color: #222222;
+}
+/* add image on top */
+.ad-image{
+    background-image: url(images/ad-image.png);
+    width: 100%;
+    height: 390px;
+    position: relative;
+}
+/* buttons on add image    ----------------------------------------------------------------re usable buttton*/
+.ad-image a{
+    background-color: #FFFFFF;
+    height: 55px;
+    width: 55px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+/* offer box on right side */
+.offer-box{
+    width: 300px;
+    height: 40px;
+    background-color: black;
+    position: fixed;
+    top: 50%;
+    right: -130px;
+display: flex;
+align-items: center;
+justify-content: center;
+transform: rotate(-90deg);
+letter-spacing: 3px;
+z-index: 10;
+}
+.offer-box a{
+    text-decoration: none;
+    color: white;
+}
+
+/* thirs navigation  bar which have color underline without hover  */
+.third-nav{
+    height: 145px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -40px;
+  
+}
+.third-nav a{
+text-decoration: none;
+display: flex;
+margin-left: 75px;
+color: #222222;
+
+}
+.third-nav-underline{
+    position: relative;
+}
+
+.third-nav-underline::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width:100%;
+    background-color:#fadcab ;
+    border-radius: 10px;
+top: 30px;
+}
+/* classic images------------  only two images in a line*/
+.classic-image{
+    display: flex;
+    width: 100%;
+    height: 315px;
+    justify-content: center;
+    gap: 15px;
+}
+    /* image size adjusting */
+.classic-image div a img{
+    width: 595px;
+    height: 315px;
+}
+/* bajaj add---------------------------------- */
+.bajaj-ad{
+    width: 100%;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bajaj-ad a img{
+    height: 175px;
+    width: 1145px;
+}
+/* round images------------- full section */
+.round-images{
+    height: 250px;
+    width: 100%;
+max-width: 100%;
+position: relative;
+}
+/* heading----- */
+.heading{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+.round-image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* imnmage size adjust */
+.round-images div img{
+    height: 135px;
+    width: 180px;
+}
+/* text under the round image */
+.image-title p{
+    text-align: center ;
+font-size: medium;
+}
+/* button on the round image */
+
+.round-images a{
+    background-color: #FFFFFF;
+    height: 55px;
+    width: 55px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/* recomentations section starts here -------------------------------------------------------------------------*/
+.recomentations{
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.recomentations h6
+{
+    font-size: 30px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    position: relative;
+}
+.grid-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    position: relative;
+}
+.grid-item img{
+    height: 290px;
+    width: 290px;
+    object-fit: cover;
+}
+.grid-text{
+    margin-top: 10px;
+
+}
+.grid-text a{
+    text-decoration: none;
+    color: #222222;
+}
+.grid-text a:hover{
+    text-decoration: underline;
+}
+.grid-text p{
+    font-size: 15px;
+}
+.text-color {
+    font-size: 18px;
+    font-weight: bold;
+    color: #646464;
+}
+/* button on the grid recomentation  */
+
+.grid-container .left-arrow3,.right-arrow3{
+    background-color: #FFFFFF;
+    height: 55px;
+    width: 55px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+/* love   symbol */
+.love{
+    position:absolute;
+    top: 10px;
+    right: 10px; 
+    background-color: white;
+    padding: 5px;
+    border-radius: 50px;
+}
+.love .material-symbols-outlined {
+    font-size: 20px;
+    color: black;
+}
+
+/* recomentations end here---------------------------------------------- */
+/* new arrivals---------------------------------------------------------------- */
+.new-arrivals{
+    height: 620px;
+    width: 100%;
+
+}
+.new-arrivals img{
+    width: 370px;
+}
+
+.new-text{
+    font-size: 25px;
+display: flex;
+justify-content: center;
+
+}
+.new-text p{
+  font-size: 27px;
+}
+.new-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+/* best sellers --------------- */
+.brand{
+    background-color: #FDFAF5;
+    width: 100%;
+    height: 1320px;
+   
+}
+.brand-heading{
+    width: 100%;
+
+}
+.brand-heading p{
+padding-top:50px;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+.grid-image{
+    margin-top: 60px;
+ grid-row-gap: 30px;
+ margin-left: 20px;
+  top: 100px;
+display: grid;
+grid-template-columns: auto auto auto auto;
+
+}
+.grid-image img{
+    width: 290px;
+    height: 340px;
+}
+/* BIG IMAGE ROUND---- */
+.big-round{
+    height: 650px;
+
+}
+.big-round-text{
+    width: 100%;
+}
+.big-round-text p{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+.big-round-image img{
+    width: 410p;
+    height: 500px;
+
+}
+
+/* login page */
+.login{
+    height:200px;
+    background-color: #FDFAF5;
+ padding-top: 100px;
+  
+}
+.login  div p{
+    font-size: 25px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+  /* footer */
+
+  /* common effects */
+  .footer div h6{
+    color: white;
+    font-size: 13px;
+  }
+
+    /* footer body starts here */
+.footer{
+    height: 450px;
+    width: 100%;
+    background-color: black;
+display: flex;
+position: relative;
+}
+.footer-collections{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.footer-collections a{
+text-decoration: none;
+color: white;
+font-size: 12px;
+margin-top: 15px;
+}
+.appstore{
+    display: flex;
+    margin-top: 30px;
+}
+
+.footer span a{
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+}
+.pay {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+.pay img{
+ margin-left: 10px;
+}
